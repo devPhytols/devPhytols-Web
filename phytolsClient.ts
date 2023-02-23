@@ -1,6 +1,7 @@
 // Importando Bibliotecas
 import express, { Request, Response } from 'express';
 import errorHandler from './handler/ErrorHandler';
+import client from './handler/DiscordConnect';
 import path from 'path';
 
 // Variáveis Globais
@@ -20,6 +21,6 @@ Client.get('/', (req: Request, res: Response) => {
 
 // Ligando o Servidor Express
 Client.listen(Port, () => {
-  console.log(`Servidor Iniciado [Porta: ${Port}]`);
+    console.log(`Servidor Iniciado [Porta: ${Port}]`);
 });
 
