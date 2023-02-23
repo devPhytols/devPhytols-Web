@@ -1,7 +1,7 @@
 // Importando Bibliotecas
 import express, { Request, Response } from 'express';
-import errorHandler from './handler/ErrorHandler';
-import client from './handler/DiscordConnect';
+import errorHandler from './modules/ErrorHandler';
+import client from './modules/DiscordConnect';
 import path from 'path';
 
 // Variáveis Globais
