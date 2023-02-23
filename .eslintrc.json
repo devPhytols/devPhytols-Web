@@ -1,0 +1,59 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "env": {
+		"node": true,
+		"es2022": true
+	},
+  "ignorePatterns": [
+		"node_modules/",
+		".git/"
+	],
+  "parserOptions": {
+		"ecmaVersion": "latest",
+		"ecmaFeatures": {
+			"jsx": true
+		}
+	},
+  "rules": {
+		"no-sync": "error",
+		"no-empty": "warn",
+		"comma-dangle": [
+			"error",
+			"never"
+		],
+		"no-cond-assign": [
+			"error",
+			"always"
+		],
+		"indent": [
+			"error",
+			4,
+			{
+				"SwitchCase": 1
+			}
+		],
+		"require-await": "error",
+		"prefer-const": "error",
+		"semi": [
+			2,
+			"always"
+		],
+		"quotes": [
+			2,
+			"single",
+			{
+				"avoidEscape": true
+			}
+		],
+		"no-useless-escape": "off",
+		"no-unused-vars": "error",
+		"no-unsafe-optional-chaining": "error",
+		"no-template-curly-in-string": "error"
+	}
+}

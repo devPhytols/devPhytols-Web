@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>devPhytols</title>
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon">
+  <!-- BOOTSTRAP LIB -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+  </script>
+  <!-- AOS LIB -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- JAVASCRIPT  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="../js/main.js" defer></script>
+</head>
+
+<body oncontextmenu="return false">
+  <nav class="navbar fixed-top navbar-expand-lg bg-dark">
+    <div class="container">
+      <a class="navbar-brand logo" href="/">
+        <h5>
+          <img src="imgs/favicon.png" alt="" width="24" height="24"> <b>dev</b><span style="color: #b7b7b7;">Phytols</span>
+        </h5>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link left" href="/" style="cursor:pointer;" aria-current="page" value="home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link left navcontact" href="#" value="contactus">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link left navcontact" href="#contactus" value="contactus">Github</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero" data-aos="fade-down" data-aos-anchor-placement="center-bottom">
+    <div class="container col-xxl-12 px-2">
+      <div class="row flex-lg-row-reverse justify-content-center align-items-center g-5 py-5">
+        <div class="col-lg-6 hero-content">
+          <h1 class="display-5 lh-1 mb-3 title">Make your<br> Dream a <span style="color: #920ea4;">reality.</span></h1>
+          <div class="conteudo">
+            <div id="typed-strings">
+              <p>I'm a {backend, frontend} developer and web designer. I am currently a student of programming,
+                I am interested in learning more and improving my knowledge in the area.
+                <br> Let's work together to create something extraordinary.</p>
+            </div>
+            <span id="typed" class="sub-title"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container projects">
+    <h1 class="project-title">Projects</h1>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2" style="color: #920ea4;">Empresa</strong>
+            <h3 class="mb-0 fw-bold">Snow Code</h3>
+            <p class="mb-auto">Website Designed and Developed For Sales of Scripts and Web Design.</p>
+            <a href="#" target="_blank" class="stretched-link">www.snowcode.com.br</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img width="200" height="250" src="https://cdnb.artstation.com/p/assets/covers/images/021/785/687/large/miguel-gallardo-hk01.jpg?1572943995">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2" style="color: #920ea4;">Discord Bot</strong>
+            <h3 class="mb-0 fw-bold">Kosame Bot</h3>
+            <p class="mb-auto">Designed and Developed to Entertain a Large Community on Discord.</p>
+            <a href="#" target="_blank" class="stretched-link">www.kosamebot.com.br</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img width="200" height="250" src="https://cdnb.artstation.com/p/assets/covers/images/021/785/687/large/miguel-gallardo-hk01.jpg?1572943995">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER  -->
+  <section class="footer">
+    <div class="container">
+      <footer
+        class="row row-cols-1 row-cols-sm-2 row-cols-md-12 py-5 my-5 border-top h-100 d-flex align-items-center justify-content-center">
+        <div class="col mb-3">
+          <p><b><span id="year"></span> © devPhytols</b> Todos os direitos reservados.</p>
+        </div>
+      </footer>
+    </div>
+  </section>
+
+  <!-- FIM FOOTER  -->
+</body>
+<script src=" https://cdn.jsdelivr.net/npm/typed.js@2.0.12"> </script>
+
+</html>
